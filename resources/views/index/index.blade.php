@@ -44,7 +44,7 @@
                                     </form>
                                 </div>
                     </div>
-                    <form method="POST" action="{{ route('question') }}" accept-charset="utf-8">
+                    <form method="POST" action="{{ route('question') }}" accept-charset="utf-8" onsubmit="return Utils.gbCanSubmit">
                         @csrf
                         <label class="conf-step__label  for="question">
                             <p>Задайте вопрос шару</p>
@@ -54,7 +54,7 @@
                                 "?"</div>
                         </label>
                         <div class="conf-step__buttons disabled" id="submitButton">
-                            <input type="submit" value='Получить ответ'
+                            <input type="submit"  value='Получить ответ'
                                 class="conf-step__button-accent
                                    conf-step__button">
                         </div>
